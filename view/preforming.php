@@ -27,9 +27,10 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/img/logo_perusahaan.png">
     <title>Preforming Dashboard</title>
-    <link rel="icon" type="image/png" href="../assets/img/logo_perusahaan.png">
-    <script src="../assets/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <script src="/assets/sweetalert2/sweetalert2.all.min.js"></script>
 
     <style>
         * {
@@ -124,7 +125,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
             transform: scale(1) !important;
         }
 
-        .splash-logo-exedy {
+        .splash-logo-clutch-tech {
             width: clamp(160px, 18vw, 250px);
             height: auto;
             display: block;
@@ -479,7 +480,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
     <div class="splash-screen" id="splash-screen">
         <div class="splash-content">
             <div class="logo-shimmer-wrapper" id="logo-wrapper">
-                <img src="../assets/img/logo_preforming.png" alt="Logo" class="splash-logo-exedy">
+                <img src="/assets/img/logo_preforming.png" alt="Logo" class="splash-logo-clutch-tech">
             </div>
             <h1 class="splash-title" id="splash-title"></h1>
             <script>
@@ -494,7 +495,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
                     },
                     {
                         t: " DASHBOARD",
-                        c: "" 
+                        c: ""
                     }
                 ];
                 let delay = 0,
