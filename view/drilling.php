@@ -1714,7 +1714,6 @@ $time_now = date('H:i:s');
                 });
                 html += `</div></div>`;
             });
-            // Setiap shift berdurasi 8 jam seragam pada skema baru
             const maxHours = 8;
             html += `<div class="timeline-axis" style="position: relative; width: 100%; height: 35px; margin-top: 10px; border-top: 2px solid #bdbdbd;">`;
             for (let i = 0; i <= maxHours; i++) {

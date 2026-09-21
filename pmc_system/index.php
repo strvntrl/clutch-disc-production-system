@@ -4,6 +4,8 @@ $GLOBALS['AUTH_GUARD_DEPTH'] = 0; // pmc/index.php -> auth/login.php (tanpa naik
 include __DIR__ . "/auth/auth_guard.php";
 include __DIR__ . "/../database.php"; // root project database.php
 
+require __DIR__ . '/../index.php';
+
 date_default_timezone_set('Asia/Jakarta');
 
 // Hanya 3 proses ini yang dibuka di PMC, sesuai cakupan project

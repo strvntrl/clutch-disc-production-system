@@ -2,11 +2,6 @@
 $page_title = "PREFORMING DASHBOARD";
 date_default_timezone_set('Asia/Jakarta');
 
-// ------------------------------------------------------------------
-// Logika shift disederhanakan: 3 shift seragam setiap hari kerja
-// (Senin-Sabtu), Minggu libur - selaras dengan tabel shift pada
-// skema PostgreSQL baru, tanpa pengecualian jam khusus hari Sabtu.
-// ------------------------------------------------------------------
 $now = new DateTime();
 $date_now = date('Y-m-d');
 $day_num = date('N'); // 1 = Senin ... 7 = Minggu

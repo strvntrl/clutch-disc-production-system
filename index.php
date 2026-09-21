@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../index.php';
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -394,14 +398,6 @@
         <p class="welcome-subtitle">Please select a section to monitor</p>
 
         <div class="menu-grid">
-            <!-- <a href="view/weighing.php" class="menu-card">
-                <div class="menu-icon">
-                    <img src="view/img/logo_weighing.jpeg" class="menu-icon-img-wg" alt="Weighing PNG">
-                </div>
-                <div class="menu-title">WEIGHING</div>
-                <div class="menu-desc">Weight Measurement Data</div>
-            </a> -->
-
             <a href="view/hotpress.php" class="menu-card">
                 <div class="menu-icon">
                     <img src="view/img/logo_hotpress.png" class="menu-icon-img" alt="Hotpress PNG">
@@ -425,15 +421,6 @@
                 <div class="menu-title">PREFORMING</div>
                 <div class="menu-desc">Preforming Process Data</div>
             </a>
-
-            <!-- <a href="view/wip_tracking.php" class="menu-card">
-                <div class="menu-icon">
-                    <img src="view/img/logo_wip.jpeg" class="menu-icon-img" alt="Tracking PNG">
-                </div>
-                <div class="menu-title">WIP TRACKING</div>
-                <div class="menu-desc">Monitor Work in Process</div>
-            </a> -->
-
         </div>
 
         <div class="footer">
