@@ -72,8 +72,6 @@ cd clutch-disc-production-system
 * Configure the database connection according to your local environment.
 #ord
 
-> Do not commit sensitive credentials or environment files to the repository.
-
 ### 5. Run the Application
 
 Start the application using your configured local PHP development environment or web server.
@@ -92,7 +90,7 @@ This project is developed for educational and portfolio purposes. Any production
 
 **Muhammad Alfiansyah**
 
-Information Systems Student | Web Developer & IT Governance Enthusiast
+Information Systems Student | Web & System Developer
 
 * GitHub: [@strvntrl](https://github.com/strvntrl)
 
