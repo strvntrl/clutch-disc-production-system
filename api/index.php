@@ -2,14 +2,12 @@
 
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-if ($requestUri !== '/') {
-    $requestUri = rtrim($requestUri, '/');
+if ($requestUri === '/' || $requestUri === '') {
+    require __DIR__ . '/../index.php';
+    exit;
 }
 
-// Mapping halaman yang boleh diakses
 $routes = [
-    '/' => __DIR__ . '/../index.php',
-
     '/view/drilling.php' => __DIR__ . '/../view/drilling.php',
     '/view/hotpress.php' => __DIR__ . '/../view/hotpress.php',
     '/view/preforming.php' => __DIR__ . '/../view/preforming.php',
