@@ -97,3 +97,85 @@ Information Systems Student | Web & System Developer
 ---
 
 ⭐ If you find this project useful, feel free to explore the repository.
+
+```
+clutch-disc-production-system
+├─ api
+│  └─ index.php
+├─ assets
+│  ├─ amcharts4
+│  │  ├─ lang
+│  │  └─ _notes
+│  │     └─ dwsync.xml
+│  ├─ icon
+│  │  ├─ pdf.png
+│  │  └─ xlsx.png
+│  ├─ img
+│  │  ├─ logo_drilling.png
+│  │  ├─ logo_hotpress.png
+│  │  ├─ logo_perusahaan.png
+│  │  ├─ logo_pmc.png
+│  │  └─ logo_preforming.png
+│  ├─ js
+│  │  └─ html2canvas.min.js
+│  ├─ svgs
+│  └─ sweetalert2
+├─ index.php
+├─ pmc_system
+│  ├─ auth
+│  │  ├─ auth_guard.php
+│  │  ├─ login.php
+│  │  ├─ logout.php
+│  │  ├─ process_login.php
+│  │  └─ validasi.php
+│  ├─ index.php
+│  ├─ info.php
+│  └─ view
+│     ├─ addon
+│     │  ├─ controller
+│     │  │  ├─ dashboardController.php
+│     │  │  ├─ get_achievement.php
+│     │  │  └─ get_partno.php
+│     │  └─ proses
+│     │     ├─ load_drilling.php
+│     │     ├─ load_hotpress.php
+│     │     ├─ save_drilling.php
+│     │     └─ save_hotpress.php
+│     ├─ default.php
+│     ├─ drilling.php
+│     ├─ hotpress.php
+│     ├─ mesin-running.php
+│     └─ preforming.php
+├─ production_report
+│  ├─ composer.json
+│  ├─ composer.lock
+│  ├─ index.php
+│  ├─ vendor
+│  │  ├─ autoload.php
+│  │  ├─ composer
+│  └─ view
+│     └─ addon
+│        ├─ controller
+│        │  ├─ dashboardController.php
+│        │  └─ reportController.php
+│        └─ proses
+│           └─ print.php
+├─ README.md
+├─ vercel.json
+└─ view
+   ├─ addon
+   │  ├─ controller
+   │  │  ├─ drilling
+   │  │  │  ├─ get_achievement.php
+   │  │  │  ├─ get_downtime.php
+   │  │  │  └─ get_historical_trend.php
+   │  │  ├─ hotpress
+   │  │  │  └─ api_hotpress.php
+   │  │  └─ preforming
+   │  │     └─ api_preforming.php
+   │  └─ control_header.php
+   ├─ drilling.php
+   ├─ hotpress.php
+   └─ preforming.php
+
+```
