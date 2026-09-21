@@ -106,7 +106,6 @@ clutch-disc-production-system
 │  ├─ amcharts4
 │  │  ├─ lang
 │  │  └─ _notes
-│  │     └─ dwsync.xml
 │  ├─ icon
 │  │  ├─ pdf.png
 │  │  └─ xlsx.png

@@ -1,14 +1,13 @@
 <?php
 session_start();
-$GLOBALS['AUTH_GUARD_DEPTH'] = 0; // pmc/index.php -> auth/login.php (tanpa naik folder)
-include __DIR__ . "/auth/auth_guard.php";
-include __DIR__ . "/../database.php"; // root project database.php
 
-require __DIR__ . '/../index.php';
+$GLOBALS['AUTH_GUARD_DEPTH'] = 0;
+
+include __DIR__ . "/auth/auth_guard.php";
+include __DIR__ . "/../database.php";
 
 date_default_timezone_set('Asia/Jakarta');
 
-// Hanya 3 proses ini yang dibuka di PMC, sesuai cakupan project
 $stageList = db_select(
     "SELECT stage_id, stage_code, stage_name
      FROM process_stage
@@ -32,8 +31,7 @@ foreach ($stageList as $s) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PMC System</title>
-    <!-- Pakai logo bersama yang sama dengan Dashboard Monitoring, satu sumber -->
-    <link rel="icon" type="image/png" href="assets/img/logo_pmc.png">
+    <img src="/assets/img/logo_perusahaan.png" alt="Logo">
     <style>
         * {
             margin: 0;
