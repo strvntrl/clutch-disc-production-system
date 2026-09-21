@@ -1,7 +1,3 @@
-<?php
-require __DIR__ . '/../index.php';
-?>
-
 <!DOCTYPE html>
 <html lang="id">
 
