@@ -28,12 +28,12 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Hotpress Dashboard</title>
-     <link rel="icon" type="image/png" href="./img/logo_perusahaan.png">
+     <link rel="icon" type="image/png" href="../assets/img/logo_perusahaan.png">
 
-     <script src="../amcharts4/core.js"></script>
-     <script src="../amcharts4/charts.js"></script>
-     <script src="../amcharts4/themes/animated.js"></script>
-     <script src="../sweetalert2/sweetalert2.all.min.js"></script>
+     <script src="../assets/amcharts4/core.js"></script>
+     <script src="../assets/amcharts4/charts.js"></script>
+     <script src="../assets/amcharts4/themes/animated.js"></script>
+     <script src="../assets/sweetalert2/sweetalert2.all.min.js"></script>
 
      <style>
           * {
@@ -425,7 +425,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
                     grid-template-columns: 1fr;
                }
 
-               .cum-box {
+               .cumulative-box {
                     width: 100%;
                     flex-wrap: wrap;
                }
@@ -593,7 +593,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
                flex-wrap: wrap;
           }
 
-          .cum-box {
+          .cumulative-box {
                border: 2px solid #0d47a1;
                border-radius: 8px;
                display: flex;
@@ -603,7 +603,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
                background: white;
           }
 
-          .cum-title {
+          .cumulative-title {
                background: #f1f5f9;
                padding: 12px 15px;
                border-right: 2px solid #0d47a1;
@@ -611,14 +611,14 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
                align-items: center;
           }
 
-          .cum-item {
+          .cumulative-item {
                padding: 12px 15px;
                display: flex;
                align-items: center;
                gap: 8px;
           }
 
-          .cum-val {
+          .cumulative-val {
                border: 1.5px solid #0d47a1;
                border-radius: 6px;
                padding: 2px 8px;
@@ -654,7 +654,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
                     font-size: 12px;
                }
 
-               .cum-box {
+               .cumulative-box {
                     width: 100%;
                     flex-wrap: wrap;
                }
@@ -670,7 +670,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
      <div class="splash-screen" id="splash-screen">
           <div class="splash-content">
                <div class="logo-shimmer-wrapper" id="logo-wrapper">
-                    <img src="./img/logo_hotpress.png" alt="Logo" class="splash-logo-exedy">
+                    <img src="../assets/img/logo_hotpress.png" alt="Logo" class="splash-logo-exedy">
                </div>
                <h1 class="splash-title" id="splash-title"></h1>
                <script>
@@ -767,11 +767,11 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
                <div id="machine-container"></div>
 
                <div class="footer-row">
-                    <div class="cum-box">
-                         <div class="cum-title">TOTAL CUMULATIVE</div>
-                         <div class="cum-item">TARGET <span class="cum-val" id="ft-plan">0</span></div>
-                         <div class="cum-item">ACTUAL <span class="cum-val" id="ft-actual">0</span></div>
-                         <div class="cum-item">ACH% <span class="cum-val" id="ft-ach">0%</span></div>
+                    <div class="cumulative-box">
+                         <div class="cumulative-title">TOTAL cumulative-</div>
+                         <div class="cumulative-item">TARGET <span class="cumulative-val" id="ft-plan">0</span></div>
+                         <div class="cumulative-item">ACTUAL <span class="cumulative-val" id="ft-actual">0</span></div>
+                         <div class="cumulative-item">ACH% <span class="cumulative-val" id="ft-ach">0%</span></div>
                     </div>
                     <button id="btn-toggle-off" class="btn-show-off" style="display: none;" onclick="toggleOfflineRows()">SHOW 0 OFFLINE MACHINES</button>
                </div>

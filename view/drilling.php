@@ -30,13 +30,13 @@ $time_now = date('H:i:s');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./img/logo_perusahaan.png">
+    <link rel="icon" type="image/png" href="../assets/img/logo_perusahaan.png">
     <title>Drilling Dashboard</title>
 
-    <script src="../amcharts4/core.js"></script>
-    <script src="../amcharts4/charts.js"></script>
-    <script src="../amcharts4/themes/animated.js"></script>
-    <script src="../sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="../assets/amcharts4/core.js"></script>
+    <script src="../assets/amcharts4/charts.js"></script>
+    <script src="../assets/amcharts4/themes/animated.js"></script>
+    <script src="../assets/sweetalert2/sweetalert2.all.min.js"></script>
 
     <style>
         * {
@@ -842,7 +842,7 @@ $time_now = date('H:i:s');
     <div class="splash-screen" id="splash-screen">
         <div class="splash-content">
             <div class="logo-shimmer-wrapper" id="logo-wrapper">
-                <img src="./img/logo_drilling.png" alt="Company Logo" class="splash-logo-exedy">
+                <img src="../assets/img/logo_drilling.png" alt="Drilling Logo" class="splash-logo-exedy">
             </div>
             <h1 class="splash-title" id="splash-title"></h1>
             <script>

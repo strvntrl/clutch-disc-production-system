@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clutch Tech Dashboard Portal</title>
-    <link rel="icon" type="image/png" href="view/img/logo_perusahaan.png">
+    <link rel="icon" type="image/png" href="assets/img/logo_perusahaan.png">
     <style>
         * {
             margin: 0;
@@ -352,7 +352,7 @@
     <div class="splash-screen" id="splash-screen">
         <div class="splash-content">
             <div class="logo-shimmer-wrapper" id="logo-wrapper">
-                <img src="view/img/logo_perusahaan.png" alt="Logo Perusahaan" class="splash-logo-exedy">
+                <img src="assets/img/logo_perusahaan.png" alt="Logo Perusahaan" class="splash-logo-exedy">
             </div>
 
             <h1 class="splash-title" id="splash-title"></h1>
@@ -388,7 +388,7 @@
     </div>
     <div class="portal-container">
         <div class="logo-container">
-            <img src="view/img/logo_perusahaan.png" alt="Logo Clutch Tech">
+            <img src="assets/img/logo_perusahaan.png" alt="Logo Clutch Tech">
         </div>
         <h1 class="welcome-title">PRODUCTION DASHBOARD SYSTEM</h1>
         <p class="welcome-subtitle">Please select a section to monitor</p>
@@ -396,7 +396,7 @@
         <div class="menu-grid">
             <a href="view/hotpress.php" class="menu-card">
                 <div class="menu-icon">
-                    <img src="view/img/logo_hotpress.png" class="menu-icon-img" alt="Hotpress PNG">
+                    <img src="assets/img/logo_hotpress.png" class="menu-icon-img" alt="Hotpress PNG">
                 </div>
                 <div class="menu-title">HOTPRESS</div>
                 <div class="menu-desc">Hotpress Production</div>
@@ -404,7 +404,7 @@
 
             <a href="view/drilling.php" class="menu-card">
                 <div class="menu-icon">
-                    <img src="view/img/logo_drilling.png" class="menu-icon-img" alt="Drilling PNG">
+                    <img src="assets/img/logo_drilling.png" class="menu-icon-img" alt="Drilling PNG">
                 </div>
                 <div class="menu-title">DRILLING</div>
                 <div class="menu-desc">Drilling Machine Status</div>
@@ -412,7 +412,7 @@
 
             <a href="view/preforming.php" class="menu-card">
                 <div class="menu-icon">
-                    <img src="view/img/logo_preforming.png" class="menu-icon-img" alt="Preforming PNG">
+                    <img src="assets/img/logo_preforming.png" class="menu-icon-img" alt="Preforming PNG">
                 </div>
                 <div class="menu-title">PREFORMING</div>
                 <div class="menu-desc">Preforming Process Data</div>

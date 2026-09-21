@@ -97,24 +97,24 @@ $title_text = isset($page_title) ? $page_title : "DASHBOARD";
 <div class="global-header" id="global-header">
     <div class="h-left">
         <a href="../index.php" class="h-logo" title="Capstone - Clutch Disc Production Monitoring">
-            <img src="./img/logo_perusahaan.png" alt="Logo">
+            <img src="../assets/img/logo_perusahaan.png" alt="Logo">
         </a>
         <div class="btn-title-dash"><?= $title_text ?></div>
         
         <div class="btn-nav-group">
             <button class="btn-nav-top" onclick="previousPage()" title="Previous Page">
-                <img src="../svgs/solid/circle-arrow-left.svg" class="svg-icon" alt="<" onerror="this.style.display='none'; this.parentNode.innerHTML='&#10094;';">
+                <img src="../assets/svgs/solid/circle-arrow-left.svg" class="svg-icon" alt="<" onerror="this.style.display='none'; this.parentNode.innerHTML='&#10094;';">
             </button>
             <button class="btn-nav-top" onclick="nextPage()" title="Next Page">
-                <img src="../svgs/solid/circle-arrow-right.svg" class="svg-icon" alt=">" onerror="this.style.display='none'; this.parentNode.innerHTML='&#10095;';">
+                <img src="../assets/svgs/solid/circle-arrow-right.svg" class="svg-icon" alt=">" onerror="this.style.display='none'; this.parentNode.innerHTML='&#10095;';">
             </button>
             
             <button class="btn-nav-top" id="btn-pause-global" onclick="toggleAutoSlide()" title="Resume Auto Refresh" style="background: #c62828;">
-                <img src="../svgs/solid/play.svg" id="icon-pause-global" class="svg-icon" alt="Play" onerror="this.style.display='none'; this.parentNode.innerHTML='▶';">
+                <img src="../assets/svgs/solid/play.svg" id="icon-pause-global" class="svg-icon" alt="Play" onerror="this.style.display='none'; this.parentNode.innerHTML='▶';">
             </button>
             
             <button class="btn-nav-top" onclick="window.location.href='../index.php'" title="Home">
-                <img src="../svgs/solid/house.svg" class="svg-icon" alt="Home" onerror="this.style.display='none'; this.parentNode.innerHTML='🏠';">
+                <img src="../assets/svgs/solid/house.svg" class="svg-icon" alt="Home" onerror="this.style.display='none'; this.parentNode.innerHTML='🏠';">
             </button>
             <button class="btn-nav-top" onclick="window.location.href='../pmc_system/index.php'" title="PMC System (perlu login)" style="width:auto; padding:0 14px; font-size:13px; font-weight:800;">
                 PMC
@@ -181,13 +181,13 @@ $title_text = isset($page_title) ? $page_title : "DASHBOARD";
         isGlobalPaused = isPaused; 
 
         if (isPaused) {
-            if(icon) icon.src = '../svgs/solid/play.svg';
+            if(icon) icon.src = '../assets/svgs/solid/play.svg';
             else btn.innerHTML = '▶';
             btn.style.background = '#c62828';
             btn.title = "Jalankan Auto-Slide";
             clearTimeout(slideTimer);
         } else {
-            if(icon) icon.src = '../svgs/solid/pause.svg';
+            if(icon) icon.src = '../assets/svgs/solid/pause.svg';
             else btn.innerHTML = '&#10074;&#10074;';
             btn.style.background = '#0d6efd';
             btn.title = "Hentikan Auto-Slide";
