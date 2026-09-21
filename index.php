@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clutch Tech Dashboard Portal</title>
-    <img src="/assets/img/logo_perusahaan.png" alt="Logo Perusahaan" class="splash-logo-clutch-tech">
     <style>
         * {
             margin: 0;
