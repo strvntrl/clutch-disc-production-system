@@ -1,26 +1,34 @@
 <?php
+
 include(__DIR__ . "/../../../database.php");
 
-$query = "SELECT id_seksi, nama_seksi FROM dbo.seksi";
-$result = odbc_exec($con, $query);
+$seksiList = db_select(
+    "SELECT stage_id AS id_seksi, stage_name AS nama_seksi
+     FROM process_stage
+     WHERE stage_code IN ('DRILLING', 'HOTPRESS', 'PREFORMING')
+     ORDER BY sequence_order"
+);
 
-$seksiList = [];
+if (!isset($selected_seksi)) {
+    $selected_seksi = isset($_GET['seksi']) && is_array($_GET['seksi'])
+        ? $_GET['seksi']
+        : [];
+}
+
+if (!is_array($selected_seksi)) {
+    $selected_seksi = $selected_seksi !== '' ? [$selected_seksi] : [];
+}
+
+$selected_seksi = array_filter($selected_seksi, fn($v) => is_numeric($v) && (int) $v > 0);
+$selected_seksi = array_values($selected_seksi);
 
 $selectedSeksiName = '';
-
-if (!empty($_GET['seksi'])) {
-    $id = $_GET['seksi'];
-
-    $query2 = "SELECT nama_seksi FROM dbo.seksi WHERE id_seksi = '$id'";
-    $result2 = odbc_exec($con, $query2);
-
-    if ($row = odbc_fetch_array($result2)) {
-        $selectedSeksiName = strtoupper($row['nama_seksi']);
+if (!empty($selected_seksi)) {
+    $id = (int) $selected_seksi[0];
+    foreach ($seksiList as $s) {
+        if ((int) $s['id_seksi'] === $id) {
+            $selectedSeksiName = strtoupper($s['nama_seksi']);
+            break;
+        }
     }
 }
-
-while ($row = odbc_fetch_array($result)) {
-    $seksiList[] = $row;
-}
-
-$selectedSeksi = $_GET['seksi'] ?? '';

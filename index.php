@@ -351,7 +351,7 @@
     <div class="splash-screen" id="splash-screen">
         <div class="splash-content">
             <div class="logo-shimmer-wrapper" id="logo-wrapper">
-                <img src="/assets/img/logo_perusahaan.png" alt="Logo Clutch Tech">
+                <img src="./assets/img/logo_perusahaan.png" alt="Logo Clutch Tech" class="splash-logo-clutch-tech">
             </div>
 
             <h1 class="splash-title" id="splash-title"></h1>
@@ -387,7 +387,7 @@
     </div>
     <div class="portal-container">
         <div class="logo-container">
-            <img src="assets/img/logo_perusahaan.png" alt="Logo Clutch Tech">
+            <img src="./assets/img/logo_perusahaan.png" alt="Logo Clutch Tech">
         </div>
         <h1 class="welcome-title">PRODUCTION DASHBOARD SYSTEM</h1>
         <p class="welcome-subtitle">Please select a section to monitor</p>
@@ -395,7 +395,7 @@
         <div class="menu-grid">
             <a href="view/hotpress.php" class="menu-card">
                 <div class="menu-icon">
-                    <img src="/assets/img/logo_hotpress.png"
+                    <img src="./assets/img/logo_hotpress.png"
                         class="menu-icon-img"
                         alt="Hotpress">
                 </div>
@@ -405,7 +405,7 @@
 
             <a href="view/drilling.php" class="menu-card">
                 <div class="menu-icon">
-                    <img src="/assets/img/logo_drilling.png"
+                    <img src="./assets/img/logo_drilling.png"
                         class="menu-icon-img"
                         alt="Drilling">
                 </div>
@@ -415,7 +415,7 @@
 
             <a href="view/preforming.php" class="menu-card">
                 <div class="menu-icon">
-                    <img src="/assets/img/logo_preforming.png"
+                    <img src="./assets/img/logo_preforming.png"
                         class="menu-icon-img"
                         alt="Preforming">
                 </div>

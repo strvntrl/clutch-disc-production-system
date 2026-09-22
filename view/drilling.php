@@ -1,27 +1,24 @@
 <?php
-include(__DIR__ . "/../database.php");
+$page_title = "DRILLING DASHBOARD";
 date_default_timezone_set('Asia/Jakarta');
 
 $now = new DateTime();
-$time = $now->format('H:i:s');
-$day_num = $now->format('N'); // 1 = Senin ... 7 = Minggu
-$hour_float = $now->format('H') + ($now->format('i') / 60);
 $date_now = date('Y-m-d');
+$day_num = date('N');
+$hour_float = $now->format('H') + ($now->format('i') / 60);
 
 if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
-    // Sebelum jam 07:30 dianggap masih kelanjutan Shift-3 hari sebelumnya
-    $date_now = date('Y-m-d', strtotime('-1 day'));
-    $shift_name = 'Shift-3';
+     $date_now = date('Y-m-d', strtotime('-1 day'));
+     $shift_name = 'Shift-3';
 } else {
-    if ($hour_float >= 7.5 && $hour_float < 15.5) {
-        $shift_name = 'Shift-1';
-    } elseif ($hour_float >= 15.5 && $hour_float < 23.5) {
-        $shift_name = 'Shift-2';
-    } else {
-        $shift_name = 'Shift-3';
-    }
+     if ($hour_float >= 7.5 && $hour_float < 15.5) {
+          $shift_name = 'Shift-1';
+     } elseif ($hour_float >= 15.5 && $hour_float < 23.5) {
+          $shift_name = 'Shift-2';
+     } else {
+          $shift_name = 'Shift-3';
+     }
 }
-$time_now = date('H:i:s');
 ?>
 
 <!DOCTYPE html>
@@ -30,13 +27,13 @@ $time_now = date('H:i:s');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/img/logo_perusahaan.png">
+    <link rel="icon" type="image/png" href="../assets/img/logo_perusahaan.png">
     <title>Drilling Dashboard</title>
 
-    <script src="/assets/amcharts4/core.js"></script>
-    <script src="/assets/amcharts4/charts.js"></script>
-    <script src="/assets/amcharts4/themes/animated.js"></script>
-    <script src="/assets/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="../assets/amcharts4/core.js"></script>
+    <script src="../assets/amcharts4/charts.js"></script>
+    <script src="../assets/amcharts4/themes/animated.js"></script>
+    <script src="../assets/sweetalert2/sweetalert2.all.min.js"></script>
 
     <style>
         * {
@@ -131,7 +128,7 @@ $time_now = date('H:i:s');
             transform: scale(1) !important;
         }
 
-        .splash-logo-clucth-tech {
+        .splash-logo-clutch-tech {
             width: clamp(160px, 18vw, 250px);
             height: auto;
             display: block;
@@ -842,7 +839,7 @@ $time_now = date('H:i:s');
     <div class="splash-screen" id="splash-screen">
         <div class="splash-content">
             <div class="logo-shimmer-wrapper" id="logo-wrapper">
-                <img src="/assets/img/logo_drilling.png" alt="Drilling Logo" class="splash-logo-clutch-tech">
+                <img src="../assets/img/logo_drilling.png" alt="Drilling Logo" class="splash-logo-clutch-tech">
             </div>
             <h1 class="splash-title" id="splash-title"></h1>
             <script>

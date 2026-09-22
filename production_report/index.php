@@ -11,6 +11,13 @@ $selected_seksi = isset($_GET['seksi']) && is_array($_GET['seksi']) ? $_GET['sek
 include "database.php";
 include "./view/addon/controller/dashboardController.php";
 include "./view/addon/controller/reportController.php";
+
+/**
+ * @var array<int, array{id_seksi: int, nama_seksi: string}> $seksiList
+ * @var array<int, array<int, array{form_id:int, row_id:int, periode:string, mesin:string, shift:string, iot:int, actual:int, ng:int, target:int}>> $reportBySeksi
+ * @var array<int, array{total_iot:int, total_actual:int, total_ng:int, total_target:int, achievement:string}> $kpiBySeksi
+ * @var array<int, array{akar_masalah: array, mesin_breakdown: array}> $breakdownBySeksi
+ */
 ?>
 
 <!DOCTYPE html>
@@ -19,11 +26,11 @@ include "./view/addon/controller/reportController.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exedy Production Report</title>
-    <script src="assets/amcharts4/core.js"></script>
-    <script src="assets/amcharts4/charts.js"></script>
-    <script src="assets/amcharts4/themes/animated.js"></script>
-    <script src="assets/js/html2canvas.min.js"></script>
+    <title>Production Report - Clutch Tech</title>
+    <script src="/assets/amcharts4/core.js"></script>
+    <script src="/assets/amcharts4/charts.js"></script>
+    <script src="/assets/amcharts4/themes/animated.js"></script>
+    <script src="/assets/js/html2canvas.min.js"></script>
     <style>
         :root {
             --navy: #0f2a5c;
@@ -1625,7 +1632,7 @@ include "./view/addon/controller/reportController.php";
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="nav-left">
-            <div class="logo"><img src="assets/img/logo-exedy.png" alt="Exedy Logo"></div>
+            <div class="logo"><img src="/assets/img/logo_perusahaan.png" alt="Logo"></div>
             <div class="system-title">Production Report</div>
 
             <div class="nav-pill">
@@ -2088,10 +2095,10 @@ include "./view/addon/controller/reportController.php";
 
                             <div class="action-bar">
                                 <button class="btn-action btn-pdf" onclick="exportPdf('<?= $seksiId ?>')">
-                                    <img src="assets/icon/pdf.png" alt="PDF"> Download PDF
+                                    <img src="/assets/icon/pdf.png" alt="PDF"> Download PDF
                                 </button>
                                 <button class="btn-action btn-xlsx" onclick="exportExcel('<?= $seksiId ?>')">
-                                    <img src="assets/icon/xlsx.png" alt="Excel"> Download (.xlsx)
+                                    <img src="/assets/icon/xlsx.png" alt="Excel"> Download (.xlsx)
                                 </button>
                             </div>
 

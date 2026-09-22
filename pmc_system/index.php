@@ -31,7 +31,6 @@ foreach ($stageList as $s) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PMC System</title>
-    <img src="/assets/img/logo_perusahaan.png" alt="Logo">
     <style>
         * {
             margin: 0;
@@ -287,7 +286,7 @@ foreach ($stageList as $s) {
     <div class="navbar">
         <div class="nav-left">
             <div class="logo">
-                <img src="../view/img/logo_perusahaan.png" alt="Logo">
+                <img src="../assets/img/logo_perusahaan.png" alt="Logo">
             </div>
             <div class="system-title">Production Management Control</div>
             <form method="GET">
