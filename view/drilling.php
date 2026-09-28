@@ -839,7 +839,7 @@ if ($day_num != 7 && $hour_float >= 0 && $hour_float < 7.5) {
     <div class="splash-screen" id="splash-screen">
         <div class="splash-content">
             <div class="logo-shimmer-wrapper" id="logo-wrapper">
-                <img src="../assets/img/logo_drilling.png" alt="Drilling Logo" class="splash-logo-clutch-tech">
+                <img src="../assets/img/logo_drilling.png" alt="Logo" class="splash-logo-clutch-tech">
             </div>
             <h1 class="splash-title" id="splash-title"></h1>
             <script>
